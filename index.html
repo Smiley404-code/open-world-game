@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
 <meta name="theme-color" content="#2e7d32">
-<title>Try 1</title>
+<title>Go Beyond the Mountain v0.1</title>
 <style>
 html,body{margin:0;padding:0;height:100%;overflow:hidden;background:#2e7d32;touch-action:none;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent}
 canvas{display:block}
@@ -575,16 +575,19 @@ function draw(){
     ctx.fillStyle='rgba(0,0,0,0.55)';ctx.fillRect(0,0,vw,vh);
     ctx.textAlign='center';
     ctx.fillStyle='#ffd24d';
-    ctx.font='bold 34px system-ui,sans-serif';
-    ctx.fillText("Try 1",vw/2,vh/2-90);
+    ctx.font='bold 24px system-ui,sans-serif';
+    ctx.fillText('Go Beyond the Mountain',vw/2,vh/2-94);
+    ctx.fillStyle='#c8e6c9';
+    ctx.font='bold 13px system-ui,sans-serif';
+    ctx.fillText('v0.1',vw/2,vh/2-70);
     ctx.fillStyle='#fff';
-    ctx.font='18px system-ui,sans-serif';
-    ctx.fillText('Explore the world and find treasure!',vw/2,vh/2-48);
-    ctx.fillText('Open chests, collect coins, fight slimes!',vw/2,vh/2-22);
+    ctx.font='17px system-ui,sans-serif';
+    ctx.fillText('Explore the world and find treasure!',vw/2,vh/2-40);
+    ctx.fillText('Open chests, collect coins, fight slimes!',vw/2,vh/2-16);
     ctx.font='15px system-ui,sans-serif';
     ctx.fillStyle='#c8e6c9';
-    ctx.fillText('Move: drag left side of screen',vw/2,vh/2+18);
-    ctx.fillText('Sword: tap the sword button',vw/2,vh/2+42);
+    ctx.fillText('Move: drag left side of screen',vw/2,vh/2+20);
+    ctx.fillText('Sword: tap the sword button',vw/2,vh/2+44);
     ctx.fillStyle='rgba(255,255,255,'+(0.6+0.4*Math.sin(performance.now()/300))+')';
     ctx.font='bold 22px system-ui,sans-serif';
     ctx.fillText('Tap to start!',vw/2,vh/2+90);
@@ -592,9 +595,15 @@ function draw(){
   if(gameOver){
     ctx.fillStyle='rgba(0,0,0,0.6)';ctx.fillRect(0,0,vw,vh);
     ctx.textAlign='center';
+    ctx.fillStyle='#ffd24d';
+    ctx.font='bold 20px system-ui,sans-serif';
+    ctx.fillText('Go Beyond the Mountain',vw/2,vh/2-94);
+    ctx.fillStyle='#c8e6c9';
+    ctx.font='bold 13px system-ui,sans-serif';
+    ctx.fillText('v0.1',vw/2,vh/2-70);
     ctx.fillStyle='#ff6b6b';
-    ctx.font='bold 36px system-ui,sans-serif';
-    ctx.fillText('GAME OVER',vw/2,vh/2-40);
+    ctx.font='bold 34px system-ui,sans-serif';
+    ctx.fillText('GAME OVER',vw/2,vh/2-36);
     ctx.fillStyle='#ffd24d';
     ctx.font='bold 24px system-ui,sans-serif';
     ctx.fillText('Coins: '+coinsGot,vw/2,vh/2+4);
