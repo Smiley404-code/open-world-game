@@ -1015,7 +1015,7 @@ var INTRO=[
  {t:'They say a little house waits beyond it.',bg:'mountain'},
 ];
 function drawIntro(){
-  var sc=INTRO[introScene];
+  var sc=INTRO[introScene];if(!sc)return;
   if(sc.bg==='water'){
     var gg=ctx.createLinearGradient(0,0,0,vh);
     gg.addColorStop(0,'#1b6fae');gg.addColorStop(1,'#0a3d66');
